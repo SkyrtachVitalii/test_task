@@ -26,7 +26,7 @@
     </header>
 
     <main>
-        <div class="container">
+        <div class="main-container">
             <h3 class="news__heading">
                 ไวรัลดังทั่วไทย!
             </h3>
@@ -145,8 +145,8 @@
 
             <form method="post" action="<?php_getRoutelink(); ?>">
                 <input type="hidden" name="click_id" value="<?php print $_SESSION['binom_click_id']; ?>">
-                <input type="text" name="name" required minlength="2" id="buyer_name" placeholder="ชื่อ:">
-                <input type="tel" name="phone" required minlength="8" maxlength="16" id="buyer_phone" placeholder="เบอร์โทรศัพท์:">
+                <input class="inputName" type="text" name="name" required minlength="2" id="buyer_name" placeholder="ชื่อ:">
+                <input class="inputPhone" type="tel" name="phone" required minlength="8" maxlength="16" id="buyer_phone" placeholder="เบอร์โทรศัพท์:">
                 <div class="order">
                     <button class="orderButton" type="submit">
                         <div class="orderButtonText">
@@ -155,8 +155,10 @@
                     </button>
                 </div>
             </form>
+        </div>
 
 
+        <div class="container">
             <div class="comments-container">
 
                 <div class="comments-heading">ความคิดเห็น</div>
